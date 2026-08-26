@@ -1,4 +1,4 @@
-.PHONY: install test run docker-build docker-run docker-test clean
+.PHONY: install test lint run docker-build docker-run docker-test clean
 
 IMAGE_NAME := data-engineering-demo
 
@@ -9,6 +9,10 @@ install:
 # Run tests
 test:
 	python -m pytest -q
+
+# Run linting
+lint:
+	python -m ruff check .
 
 # Run the application
 run:
