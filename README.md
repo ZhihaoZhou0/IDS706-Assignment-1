@@ -39,6 +39,12 @@ make run
 make test
 ```
 
+## Run Formatting
+
+```bash
+make format
+```
+
 ## Run Linting
 
 ```bash
@@ -71,3 +77,8 @@ Enter your name when prompted:
 
 ```text
 Andy, welcome to the Data Engineering course.
+```
+
+## Bonus Exploration
+
+Improved input handling by removing extra whitespace from the user's name and using "friend" as the default when no name is entered.
